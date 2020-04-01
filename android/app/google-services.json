@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "137852284729",
+    "firebase_url": "https://relief-test-project.firebaseio.com",
+    "project_id": "relief-test-project",
+    "storage_bucket": "relief-test-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137852284729:android:5eb885f029f2af5edcc2e8",
+        "android_client_info": {
+          "package_name": "com.shankar.relief_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137852284729-qt8n955g2k95h640icea1tn2m450ad36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDruT_LNzkEqT5YR9tyhZF1QhFrwbdOEpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137852284729-qt8n955g2k95h640icea1tn2m450ad36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
