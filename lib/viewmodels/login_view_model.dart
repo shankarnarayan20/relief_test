@@ -25,7 +25,7 @@ class LoginViewModel extends BaseModel {
 
     if (result is bool) {
       if (result) {
-        _navigationService.navigateTo(StartUpViewRoute);
+        _navigationService.navigateTo(HomeViewRoute);
       } else
         _dialogService.showDialog(
           title: "Login has failed",

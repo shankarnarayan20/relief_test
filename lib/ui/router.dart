@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:relief_test/constants/route_names.dart';
+import 'package:relief_test/ui/views/home_view.dart';
 import 'package:relief_test/ui/views/login_view.dart';
 import 'package:relief_test/ui/views/signup_view.dart';
-import 'package:relief_test/ui/views/startup_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -16,10 +16,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         routeName: settings.name,
         viewToShow: SignUpView(),
       );
-    case StartUpViewRoute:
+    case HomeViewRoute:
       return _getPageRoute(
         routeName: settings.name,
-        viewToShow: StartUpView(),
+        viewToShow: HomeView(),
       );
     default:
       return MaterialPageRoute(
