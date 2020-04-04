@@ -2,5 +2,5 @@ const String LoginViewRoute = "LoginView";
 const String SignUpViewRoute = "SignUp";
 const String StartUpViewRoute = "StartUpView";
 const String HomeViewRoute = "HomeView";
-const String DonationsViewRoute = "DonationsView";
+const String CreateDonationsViewRoute = "CreateDonationsView";
 // Generate the views here

@@ -4,13 +4,15 @@ import 'package:relief_test/locator.dart';
 import 'package:relief_test/services/firestore_service.dart';
 import 'package:relief_test/models/user.dart';
 
+class AuthenticationService {
+
+
 final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 final FirestoreService _firestoreService = locator<FirestoreService>();
 
 User _currentUser;
 User get currentUser => _currentUser;
 
-class AuthenticationService {
   Future loginwithEmail({
     @required String email,
     @required String password,

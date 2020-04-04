@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:relief_test/constants/route_names.dart';
+import 'package:relief_test/ui/views/create_donations_view.dart';
 import 'package:relief_test/ui/views/home_view.dart';
 import 'package:relief_test/ui/views/login_view.dart';
 import 'package:relief_test/ui/views/signup_view.dart';
@@ -21,6 +22,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         routeName: settings.name,
         viewToShow: HomeView(),
       );
+    case CreateDonationsViewRoute:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: CreateDonationsView(),
+      );
     default:
       return MaterialPageRoute(
           builder: (_) => Scaffold(
@@ -29,6 +35,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
               ));
   }
 }
+
+class DonationsView {}
 
 PageRoute _getPageRoute({String routeName, Widget viewToShow}) {
   return MaterialPageRoute(
