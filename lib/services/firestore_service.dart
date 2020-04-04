@@ -21,15 +21,39 @@ class FirestoreService {
   Future getUser(String uid) async {
     try {
       var userData = await _usersCollectionReference.document(uid).get();
+      return User.fromData(userData.data);
     } catch (e) {
       if (e is PlatformException) return e.message;
       return e.message;
     }
   }
 
-  Future addDonations(Donations donations) async {
+  Future updateCount(int count, User user) async {
+    user.count += 1;
     try {
-      await _donationsCollectionReference.add(donations.toMap());
+      await _usersCollectionReference
+          .document(user.id)
+          .updateData(user.toJson());
+    } catch (e) {
+      if (e is PlatformException) return e.message;
+      return e.message;
+    }
+  }
+
+  Future addDonations(Donations donations, User user) async {
+    int count = user.count + 1;
+    try {
+      await updateCount(count, user);
+    } catch (e) {
+      if (e is PlatformException) return e.message;
+      return e.message;
+    }
+    try {
+      await _donationsCollectionReference
+          .document(user.id)
+          .collection(count.toString())
+          .document('DonationList')
+          .setData(donations.toMap());
     } catch (e) {
       if (e is PlatformException) return e.message;
       return e.message;

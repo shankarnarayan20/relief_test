@@ -5,13 +5,11 @@ import 'package:relief_test/services/firestore_service.dart';
 import 'package:relief_test/models/user.dart';
 
 class AuthenticationService {
+  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final FirestoreService _firestoreService = locator<FirestoreService>();
 
-
-final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-final FirestoreService _firestoreService = locator<FirestoreService>();
-
-User _currentUser;
-User get currentUser => _currentUser;
+  User _currentUser;
+  User get currentUser => _currentUser;
 
   Future loginwithEmail({
     @required String email,
@@ -38,8 +36,8 @@ User get currentUser => _currentUser;
     try {
       var authresult = await _firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
-      _currentUser = User(
-          authresult.user.uid, fullname, email, phonenumber, address, location);
+      _currentUser = User(authresult.user.uid, fullname, email, phonenumber,
+          address, location, 0);
       await _firestoreService.createUser(_currentUser);
       return authresult.user != null;
     } catch (e) {

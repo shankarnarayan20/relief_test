@@ -5,15 +5,10 @@ class User {
   final String phonenumber;
   final String address;
   final String location;
+  int count;
 
-  User(
-    this.id,
-    this.fullname,
-    this.email,
-    this.phonenumber,
-    this.address,
-    this.location,
-  );
+  User(this.id, this.fullname, this.email, this.phonenumber, this.address,
+      this.location, this.count);
 
   User.fromData(Map<String, dynamic> data)
       : id = data['id'],
@@ -21,7 +16,8 @@ class User {
         email = data['email'],
         phonenumber = data['phonenumber'],
         address = data['address'],
-        location = data['location'];
+        location = data['location'],
+        count = data['count'];
 
   Map<String, dynamic> toJson() {
     return {
@@ -31,6 +27,7 @@ class User {
       'phonenumber': phonenumber,
       'address': address,
       'location': location,
+      'count': count
     };
   }
 }
