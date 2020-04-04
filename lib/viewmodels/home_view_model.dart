@@ -6,6 +6,5 @@ import 'package:relief_test/viewmodels/base_model.dart';
 class HomeViewModel extends BaseModel {
   final NavigationService _navigationService = locator<NavigationService>();
 
-  //void navigateToCreateView() =>
-    //  _navigationService.navigateTo(CreatePostViewRoute);
+  void navigateToDonationsView() => _navigationService.navigateTo(DonationsViewRoute);
 }
