@@ -3,7 +3,6 @@ import 'package:relief_test/services/dialog_service.dart';
 import 'package:relief_test/services/firestore_service.dart';
 import 'package:relief_test/services/navigation_service.dart';
 import 'package:relief_test/viewmodels/base_model.dart';
-
 import '../locator.dart';
 
 class CreateDonationsViewModel extends BaseModel {
@@ -14,6 +13,7 @@ class CreateDonationsViewModel extends BaseModel {
   Future addDonations(
       String fooditems, String medicalitems, String otheritems) async {
     setBusy(true);
+
     var result = await _firestoreService.addDonations(
         Donations(currentUser.id, fooditems, medicalitems, otheritems),
         currentUser);

@@ -17,6 +17,7 @@ class User {
     this.count
   );
 
+
   User.fromData(Map<String, dynamic> data)
       : id = data['id'],
         fullname = data['fullname'],

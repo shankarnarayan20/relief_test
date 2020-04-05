@@ -2,7 +2,6 @@ import 'package:relief_test/locator.dart';
 import 'package:relief_test/models/donation_model.dart';
 import 'package:relief_test/services/dialog_service.dart';
 import 'package:relief_test/services/firestore_service.dart';
-import 'package:relief_test/services/navigation_service.dart';
 import 'package:relief_test/viewmodels/base_model.dart';
 
 class ViewDonationsViewModel extends BaseModel {
