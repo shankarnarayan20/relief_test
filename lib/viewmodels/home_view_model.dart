@@ -12,4 +12,7 @@ class HomeViewModel extends BaseModel {
   void navigateToLoginView(context) {
     Navigator.pushNamedAndRemoveUntil(context, LoginViewRoute, (r) => false);
   }
+
+  void navigateToViewDonationsView() =>
+      _navigationService.navigateTo(ViewDonationsViewRoute);
 }

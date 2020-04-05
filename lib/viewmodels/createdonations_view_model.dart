@@ -11,10 +11,12 @@ class CreateDonationsViewModel extends BaseModel {
   final DialogService _dialogService = locator<DialogService>();
   final NavigationService _navigationService = locator<NavigationService>();
 
-  Future addDonations(String fooditems ,String medicalitems,String otheritems) async {
+  Future addDonations(
+      String fooditems, String medicalitems, String otheritems) async {
     setBusy(true);
     var result = await _firestoreService.addDonations(
-        Donations(currentUser.id, fooditems, medicalitems, otheritems));
+        Donations(currentUser.id, fooditems, medicalitems, otheritems),
+        currentUser);
     setBusy(false);
 
     if (result is String) {

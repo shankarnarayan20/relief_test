@@ -26,7 +26,9 @@ class HomeView extends StatelessWidget {
                   MaterialButton(
                       color: Colors.teal,
                       child: Text("View your donations / entries"),
-                      onPressed: () {}),
+                      onPressed: () {
+                        model.navigateToViewDonationsView();
+                      }),
                   verticalSpaceLarge,
                   MaterialButton(
                       color: Colors.teal,

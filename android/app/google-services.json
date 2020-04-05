@@ -1,34 +1,79 @@
 {
   "project_info": {
-    "project_number": "137852284729",
-    "firebase_url": "https://relief-test-project.firebaseio.com",
-    "project_id": "relief-test-project",
-    "storage_bucket": "relief-test-project.appspot.com"
+    "project_number": "887306817198",
+    "firebase_url": "https://stuco-d1d56.firebaseio.com",
+    "project_id": "stuco-d1d56",
+    "storage_bucket": "stuco-d1d56.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:137852284729:android:5eb885f029f2af5edcc2e8",
+        "mobilesdk_app_id": "1:887306817198:android:2586c8a7c0991ed626e73f",
         "android_client_info": {
-          "package_name": "com.shankar.relief_test"
+          "package_name": "com.example.relief_test"
         }
       },
       "oauth_client": [
         {
-          "client_id": "137852284729-qt8n955g2k95h640icea1tn2m450ad36.apps.googleusercontent.com",
+          "client_id": "887306817198-86om4n0qunvt5i34f43s9inen8b3dg9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.relief_test",
+            "certificate_hash": "0b01729e5e17690a3c61d362383b3334383b9895"
+          }
+        },
+        {
+          "client_id": "887306817198-s8rgffcr7f1klqrsovsb0sjalso5h8u1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDruT_LNzkEqT5YR9tyhZF1QhFrwbdOEpI"
+          "current_key": "AIzaSyCqIqLxfMBR4P7K9cgfvyjGyfpXi1EpRxI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "137852284729-qt8n955g2k95h640icea1tn2m450ad36.apps.googleusercontent.com",
+              "client_id": "887306817198-s8rgffcr7f1klqrsovsb0sjalso5h8u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887306817198:android:656c4b21b5899d7a",
+        "android_client_info": {
+          "package_name": "protocol.com.stuco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887306817198-n3iap4hmi0cdch0vgrr7lq04nqs2brbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "protocol.com.stuco",
+            "certificate_hash": "bcb1dc3745e644a233c67dd49bce081e862c98e6"
+          }
+        },
+        {
+          "client_id": "887306817198-s8rgffcr7f1klqrsovsb0sjalso5h8u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqIqLxfMBR4P7K9cgfvyjGyfpXi1EpRxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887306817198-s8rgffcr7f1klqrsovsb0sjalso5h8u1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

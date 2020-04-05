@@ -4,6 +4,7 @@ import 'package:relief_test/ui/views/create_donations_view.dart';
 import 'package:relief_test/ui/views/home_view.dart';
 import 'package:relief_test/ui/views/login_view.dart';
 import 'package:relief_test/ui/views/signup_view.dart';
+import 'package:relief_test/ui/views/view_donations_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -26,6 +27,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(
         routeName: settings.name,
         viewToShow: CreateDonationsView(),
+      );
+    case ViewDonationsViewRoute:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: ViewDonationsView(),
       );
     default:
       return MaterialPageRoute(

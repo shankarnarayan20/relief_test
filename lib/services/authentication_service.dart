@@ -39,7 +39,7 @@ User get currentUser => _currentUser;
       var authresult = await _firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
       _currentUser = User(
-          authresult.user.uid, fullname, email, phonenumber, address, location);
+          authresult.user.uid, fullname, email, phonenumber, address, location,0);
       await _firestoreService.createUser(_currentUser);
       return authresult.user != null;
     } catch (e) {
