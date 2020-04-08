@@ -36,8 +36,8 @@ class AuthenticationService {
     try {
       var authresult = await _firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
-      _currentUser = User(
-          authresult.user.uid, fullname, email, phonenumber, address, location,0);
+      _currentUser = User(authresult.user.uid, fullname, email, phonenumber,
+          address, location, 0);
       await _firestoreService.createUser(_currentUser);
       return authresult.user != null;
     } catch (e) {
